@@ -9,14 +9,13 @@ const {
     checkIfAuthenticated
 } = require("../middlewares/skills/validateUser.middleware");
 
-// const { DomainRegController } = require("../controllers/skillsDomainReg.controller");
-// const router = require("./skillsAuth.route");
+
 
 router.post('/',
 [getAuthToken,getFirebaseUid,checkIfAuthenticated],
 DomainRegController.DomainRegController)
 
-//submission
+//submission Route
 
 const {SubmitController}=require('../controllers/skillsSubmitController')
 router.post('/submit',

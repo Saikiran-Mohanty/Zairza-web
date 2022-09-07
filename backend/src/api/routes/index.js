@@ -3,5 +3,5 @@ const domainReg=require('./domainReg.route');
 
 module.exports = (app) => {
 	app.use("/api/zairza/skill-plus-plus", SkillsAuthRoute),
-	app.use("/api/zairza/skill-plus-plus/domainReg", domainReg)
+	app.use("/api/zairza/skill-plus-plus/domainReg", domainReg) //domain registry and /submit to submit weeks task
 };
